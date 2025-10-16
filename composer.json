@@ -1,0 +1,40 @@
+{
+    "name": "alaminfirdows/laravel-opaque-id",
+    "description": "A simple Laravel package to generate opaque IDs for your models.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Al-Amin Firdows",
+            "email": "alaminfirdows@gmail.com"
+        }
+    ],
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
+    },
+    "require": {
+        "php": "^8.2|^8.3|^8.4",
+        "illuminate/support": "^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0",
+        "phpunit/phpunit": "^10.5|^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AlAminFirdows\\LaravelOpaqueId\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AlAminFirdows\\LaravelOpaqueId\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AlAminFirdows\\LaravelOpaqueId\\LaravelOpaqueIdServiceProvider"
+            ]
+        }
+    }
+}
