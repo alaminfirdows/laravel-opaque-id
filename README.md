@@ -15,11 +15,12 @@ Generate short, reversible, opaque identifiers for numeric IDs in Laravel. This 
 Opaque ID obfuscates integers using a reversible scheme based on a secret key. It aims to hide resource/database IDs from observers when included in public URLs or API responses, without the need for surrogate database keys.
 
 What Opaque IDs look like (illustrative):
-|------|----------|--------|
-| 0 | 7ea0aa7a | fqCqeg |
-| 1 | 0ae54fa3 | CuVPow |
-| 2 | cbae9d6c | y66dbA |
-| 3 | db2ac148 | 2yrBSA |
+
+| Int ID | Hex      | Base64  |
+|--------|----------|---------|
+| 1      | 0ae54fa3 | CuVPow  |
+| 2      | cbae9d6c | y66dbA  |
+| 3      | db2ac148 | 2yrBSA  |
 
 The algorithm is a one‑to‑one integer mapping incorporating a secret key. It's lightweight and compact, at the cost of actual cryptographic security. For real encryption, use proven cryptographic primitives; you won't get such compact ciphertexts with real encryption.
 
